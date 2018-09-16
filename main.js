@@ -1,49 +1,30 @@
-function signUpFunction() {
-    var txt;
-    var person = prompt("Please enter your name:", "Harry Potter");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "Hello " + person + "! How are you today?";
-    }
-    document.getElementById("demo").innerHTML = txt;
-}
 
-function signUpFunction() {
-    var txt;
-    var person = prompt("Please enter your name:", "Damian Padilla");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "Hello " + person + "! How are you today?";
-    }
-    document.getElementById("demo").innerHTML = txt;
-}
 
 
 
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('simpleModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var modalBtn = document.getElementById('modalBtn');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
+
+
+//listen for click
+modalBtn.addEventListener('click', openModal);
+
+//listen for Close click
+closeBtn.addEventListener('click', closeModal);
+
+//function to open modal.
+function openModal(){
+  modal.style.display = 'block';
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+//function to close modal.
+function closeModal(){
+  modal.style.display = 'none';
 }
