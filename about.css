@@ -1,0 +1,45 @@
+body {
+  background-color:#B1E4C5;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:
+  }
+h1 {
+  color:#3D7F57;
+  text-align: center;
+  font-family:  Helvetica;
+}
+.dashboard {
+  text-align: center;
+  text-align: center;
+  background-color: #3D7F57;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 1;
+  font-size: 15pt;
+  padding: 20px;
+}
+.dashboard:hover {
+background-color: #9ECCB0;
+}
+.intro{
+  text-align: left;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 1;
+  font-size: 200%;
+
+}
+ul {
+  text-align: left;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 1;
+
+}
